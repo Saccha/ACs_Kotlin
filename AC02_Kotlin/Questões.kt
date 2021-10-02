@@ -50,6 +50,41 @@ fun main() {
     
 /*---------------------------------------------------------------------------------*/
 
+/*4. Crie três classes chamadas, Aluno, Turma e Professor. Na função main, crie
+um atributo chamado obj instanciando uma das classes, valide se o atributo é do
+tipo da Classe Aluno, Turma ou Professor e exiba em console o tipo de dado que
+ele pertence.*/
+
+class Turma(id: Int, nome: String, qtdAlunos:Int) {
+	init {
+       println("-----------------------------------")
+       println("ID: $id \nNome da Turma: $nome\nQuantidade de alunos: $qtdAlunos")
+    }
+}
+
+class Aluno(id: Int, nome: String, curso:String) {
+	init {
+        println("-----------------------------------")
+   		println("ID: $id \nNome do Aluno: $nome\nCurso: $curso")
+	}
+}
+
+class Professor(id: Int, nome: String, curso:String) {
+	init {
+        println("-----------------------------------")
+   		println("ID: $id \nNome do Professor: $nome\nCurso: $curso")
+        println("-----------------------------------")
+	}
+}
+
+fun main() {
+	var obj1 = Turma(48743298, "Análise e Desenvolvimento de Sistemas", 40)
+    var obj2 = Aluno(28736173,"Fulano","Análise e Desenvolvimento de Sistemas")
+    var obj3 = Professor(18728191,"Fabio","Análise e Desenvolvimento de Sistemas")
+}
+
+/*---------------------------------------------------------------------------------*/
+
 /*6. Cria uma classe chamada Aluno com os atributos ID do aluno, nome do Aluno
 e semestre. Passe 10 notas por meio da utilização de um ArrayList inicializadas
 no método construtor e imprima cada um dos valores em console a partir de uma
