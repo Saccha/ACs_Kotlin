@@ -1,3 +1,18 @@
+/*1. Crie uma variável global que indique o percentual de reajuste de um
+determinado produto, que deve ser calculado a partir do método main definido
+na função. Calcule o novo salário e exiba-o em console.*/
+
+var salarioReajuste: Double = 6.5
+var salarioAtual : Double = 2500.00
+
+fun main(){
+    var novoSalario = salarioAtual + (salarioAtual * salarioReajuste / 100 )
+    println("$novoSalario")
+
+}
+
+/*---------------------------------------------------------------------------------*/
+
 /* 2. A classe Aluno possuí os atributos id, nome e curso. Receba todos os
 parâmetros no método construtor e exiba-os em console, sem a utilização de
 métodos estáticos. */
