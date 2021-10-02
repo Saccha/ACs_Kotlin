@@ -107,3 +107,14 @@ fun main(){
     var carros = arrayListOf(c0, c1, c2)
 
 }
+
+/*---------------------------------------------------------------------------------*/
+
+
+/*8.Crie uma expressão lambda que realiza a divisão de 2 valores e exiba os
+resultados em console.*/
+
+fun main() {
+   val div = { x: Int, y: Int -> x / y }
+   println(div(100,15))
+}
