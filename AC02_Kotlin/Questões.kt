@@ -76,3 +76,34 @@ fun main(){
 
     var aluno1 = Aluno(1,"Fulano da Vida", lista_notas)
 }
+
+/*---------------------------------------------------------------------------------*/
+
+/*7. Inicialize a classe Carro modelo do tipo de dado String, ano do tipo de dado
+inteiro e velocidade do tipo de dado inteiro. Na classe Carro, o atributo ano deve
+ser iniciado com o valor 1900. Na função main crie 3 instâncias da classe Carro,
+nomeadas como c0, c1 e c2. Inicialize o atributo ano de c2 com o valor 2020. Em
+seguida exiba o ano do carro acessado por meio do objeto c1 e o ano do carro
+acessado por meio do objeto c2.*/
+
+class Carro(modelo: String, ano: Int, velocidade: Int){
+    var modelo: String
+    var ano = 1900
+    var velocidade: Int
+
+    init {
+        this.modelo =  modelo
+        this.ano = ano
+        this.velocidade = velocidade
+    }
+}
+
+fun main(){
+    var c0 = Carro("Peugeot", 1900, 200)
+    var c1 = Carro("HB20", 1991, 200)
+    var c2 = Carro(modelo = "Fusca", ano = 2020, velocidade = 250)
+    println("Ano do carro 0: ${c0.ano} \nAno do carro 1: ${c1.ano} \nAno do carro 2: ${c2.ano}")
+
+    var carros = arrayListOf(c0, c1, c2)
+
+}
