@@ -32,4 +32,32 @@ class Aluno(id: Int, nome: String, curso:String) {
 fun main() {
     var obj = Aluno(1, "Fulano", "Análise e Desenvolvimento de Sistemas")
     Aluno.chamar()
+    
+/*---------------------------------------------------------------------------------*/
 
+/*6. Cria uma classe chamada Aluno com os atributos ID do aluno, nome do Aluno
+e semestre. Passe 10 notas por meio da utilização de um ArrayList inicializadas
+no método construtor e imprima cada um dos valores em console a partir de uma
+nova função.*/
+
+class Aluno(id: Int, nome: String, notas: List<Double>){
+    init {
+        println("ID: $id \nNome aluno: $nome \nnotas: $notas")
+    }
+}
+
+fun main(){
+    val lista_notas = arrayListOf<Double>()
+    lista_notas.add(10.0)
+    lista_notas.add(5.0)
+    lista_notas.add(9.0)
+    lista_notas.add(6.0)
+    lista_notas.add(7.5)
+    lista_notas.add(4.5)
+    lista_notas.add(3.0)
+    lista_notas.add(8.0)
+    lista_notas.add(9.2)
+    lista_notas.add(6.5)
+
+    var aluno1 = Aluno(1,"Fulano da Vida", lista_notas)
+}
