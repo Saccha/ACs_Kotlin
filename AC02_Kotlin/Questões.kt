@@ -2,14 +2,13 @@
 determinado produto, que deve ser calculado a partir do método main definido
 na função. Calcule o novo salário e exiba-o em console.*/
 
-var salarioReajuste: Double = 6.5
-var salarioAtual : Double = 2500.00
+val preco = 2.99f
+	fun main(){
+        val preco = 4.99f
+        val desconto = 0.5f
+        println(preco - preco * desconto)
+    }
 
-fun main(){
-    var novoSalario = salarioAtual + (salarioAtual * salarioReajuste / 100 )
-    println("$novoSalario")
-
-}
 
 /*---------------------------------------------------------------------------------*/
 
