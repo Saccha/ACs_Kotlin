@@ -49,3 +49,37 @@ animal2.sound()
 }
 
 /*-------------------------------------------------------------------------------------------------------*/
+
+/*7. Explique cada um dos conceitos abaixo:
+• Classe:
+	Resposta: Uma classe é um bloco de construção de software fundamental, encontrado na grande maioria das linguagens 
+    orientadas a objetos e, dessa forma, também presente em Kotlin. Elas são usadas para criar novos tipos de dados, 
+    utilizando uma estrutura composta por métodos e variáveis que podem possuir os seus próprios tipos.
+    
+• Objeto:
+	Resposta:Objetos são muito semelhantes às classes.
+    -> Eles podem ter propriedades, métodos e um bloco init.
+	-> Essas propriedades ou métodos podem ter modificadores de visibilidade.
+	-> Eles não podem ter construtores (primários ou secundários).
+	-> Eles podem estender outras classes ou implementar uma interface.
+	
+• Herança:
+	Resposta: Herança é um dos três pilares da orientação a objetos.É através desse recurso que podemos estender ou modificar o 
+    comportamento de um código existente, promovendo a reutilização. Nesse processo a classe existente é chamada de superclasse e a classe a ser criada se 
+    chama classe derivada ou subclasse.
+
+• Interface:
+	Resposta: As interfaces no Kotlin podem conter declarações de métodos abstratos, bem como implementações de métodos. O que os torna diferentes das classes 
+    abstratas é que as interfaces não podem armazenar um estado. 
+    Eles podem ter propriedades, mas precisam ser abstratas ou fornecer implementações de acessador.
+    
+• Classe Abstrata
+	Resposta:Uma classe abstrata, assim como os seus métodos abstratos, é open por padrão. Ao herdar de uma classe abstrata, todos os métodos abstratos da superclasse devem ser 
+    implementados na subclasse, a não ser que a mesma também 
+    seja abstrata. Caso contrário, um erro será emitido pelo compilador
+    
+• Polimorfismo
+	Resposta:polimorfismo é o princípio pelo qual duas ou mais classes derivadas da mesma superclasse 
+    podem invocar métodos que têm a mesma assinatura,mas comportamentos distintos
+
+• Métodos estáticos e não estáticos.*/
