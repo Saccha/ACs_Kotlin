@@ -82,4 +82,9 @@ animal2.sound()
 	Resposta:polimorfismo é o princípio pelo qual duas ou mais classes derivadas da mesma superclasse 
     podem invocar métodos que têm a mesma assinatura,mas comportamentos distintos
 
-• Métodos estáticos e não estáticos.*/
+• Métodos estáticos e não estáticos.
+	Resposta: Métodos estáticos não requerem uma instância da classe nem podem acessar implicitamente os dados (ou this , self , Me , etc.) de tal instância. 
+    Um método estático é distinguido em algumas linguagens de programação 
+    com a palavra-chave static colocada em algum lugar na assinatura do método.
+  
+*/
