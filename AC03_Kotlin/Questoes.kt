@@ -21,3 +21,31 @@ fun main() {
 }
 
 /*-------------------------------------------------------------------------------------------------------*/
+
+/*3. Crie uma nova classe com base no exemplo abaixo chamada Cat e
+implemente o método definido na classe Animal. Apresente valores em console
+da mesma forma que ocorre na Classe Dog, para a nova classe implementada.*/
+
+open class Animal() {
+open var colour: String = "White"
+}
+class Dog: Animal() {
+override var colour: String = "Black"
+fun sound() {
+println("Dog makes a sound of woof woof")
+}
+}
+class Cat: Animal() {
+override var colour: String = "White"
+fun sound() {
+println("Cat makes a sound of meow")
+}
+}
+fun main(){
+var animal1: Dog = Dog()
+var animal2: Cat = Cat()
+animal1.sound()
+animal2.sound()
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
