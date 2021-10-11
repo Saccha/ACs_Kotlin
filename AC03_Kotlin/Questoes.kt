@@ -115,3 +115,47 @@ fun main(){
     com a palavra-chave static colocada em algum lugar na assinatura do método.
   
 */
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*8. Explique cada uma das camadas que fazem parte da arquitetura do Android.
+Descreva o passo a passo necessário para criar uma nova aplicação
+
+Camada de aplicações:
+	-> Onde encontram-se todos os aplicativos que são executados
+		sobre o sistema operacional.
+        
+Camada de bibliotecas:
+	-> Possui as bibliotecas C e C++ que são utilizadas pelo sistema.package
+
+Camada de Runtime:
+	-> Camada onde é instanciada a máquina virtual Dalvik para
+		gerenciamento do desempenho.
+        
+Camada de kernel do Linux:
+	-> O núcleo do sistema operacional Android é derivado do Kernel
+		2.6 do Linux herdando várias características da plataforma.
+      
+------------------------------------------------------------------------------------------------
+
+PARA CRIAR NOVA APLICAÇÃO:
+
+-> Abra o Android Studio e clique em “Start a new Android Studio Project”. 
+   Abrirá uma tela para que você escolha o nome do aplicativo, nome da companhia e a localização do projeto. 
+   Informe os nomes de sua preferência. Por exemplo: "HelloWorld"
+   Marque a caixa “Include Kotlin support” para que o seu projeto possa usar a linguagem Kotlin. 
+   
+-> Após efetuar as configurações, clique em “Next”. Nesta janela, deixe marcado o item “Phone and Tablet” e selecionando a versão 
+  “API 16 Android 4.0.3”, escolha da API 16 para que seu app possa rodar em aproximadamente 100% dos devices com Android 
+   como é informado pelo Android Studio 
+  "By targeting API 16 and later, your app will run on approximately 100% of devices".
+
+-> Com isso, informamos que nossa aplicação será executada apenas em smartphones e tablets, clique em “Next” novamente. 
+   Na próxima tela, você deverá selecionar “Empty Activity” e então clicar em “Next”.package
+   
+-> Na próxima tela, você pode deixar MainActivity ou escolher o nome que preferir para a atividade principal. Clique em “Finish” e aguarde 
+   enquanto o Android Studio carrega todas as bibliotecas necessárias para seu App.
+   
+-> Todo o código será feito na MainActivity e em nosso arquivo activity_mail.xml que está localizado em: res -> layout.
+
+*/
