@@ -50,6 +50,33 @@ animal2.sound()
 
 /*-------------------------------------------------------------------------------------------------------*/
 
+/*4. Dado o exemplo abaixo, realize a implementação de duas classes concretas
+chamadas Aluno e Professor que devem implementar o método imprimir.
+Apresente os resultados em console.*/
+
+interface Usuario {
+	fun imprimir()
+}
+class Aluno:Usuario{
+	override fun imprimir(){
+	println("Implementando uma função")
+	}
+}
+class Professor:Usuario{
+	override fun imprimir(){
+	println("Implementando outra função")
+	}
+}
+fun main(){
+	val user = Aluno()
+    val user1 = Professor()
+	user.imprimir()
+    user1.imprimir()
+}
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+
 /*7. Explique cada um dos conceitos abaixo:
 • Classe:
 	Resposta: Uma classe é um bloco de construção de software fundamental, encontrado na grande maioria das linguagens 
