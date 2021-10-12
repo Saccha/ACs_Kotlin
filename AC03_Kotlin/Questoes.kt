@@ -74,6 +74,27 @@ fun main(){
     user1.imprimir()
 }
 
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+/*6. Dado o exemplo abaixo, modifique a exceção para que seja considerado como
+senha fraca um valor menor do que 10 caracteres.*/
+
+fun main(args: Array<String>) {
+    val password:String = "abcd"
+    try{
+        if (password.length < 10){
+            throw Exception("Senha fraca")
+        }
+        else
+        {
+            println("Senha forte")
+        }
+    }
+    catch (e: Exception){
+        println(e.message)
+    }
+}
 
 /*-------------------------------------------------------------------------------------------------------*/
 
