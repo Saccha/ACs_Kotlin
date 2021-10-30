@@ -3,6 +3,17 @@
 -----------------------------------------------------------------------------------------
 
 # 2) Detalhe cada um dos componentes que estão inclusos no contexto de uma aplicação em Android.
+## Resposta:
+
+### - Activities são as representantes das telas da aplicação. Associada a uma activity normalmente existe uma view, que define como será feita a exibição visual para o usuário. As activities são responsáveis por gerenciar os eventos de tela e também coordenam o fluxo da aplicação.
+
+### - Os Services são códigos que executam em segundo plano. Normalmente são utilizados para tarefas que demandam um grande tempo de execução.
+
+### - Os Content Providers (provedores de conteúdos) são a maneira utilizada pela plataforma para compartilhar dados entre as aplicações que executam no dispositivo. Um exemplo bem claro disto é a aplicação de gerenciamento de contatos do Android, que é nativa. Aplicações desenvolvidas por terceiros podem utilizar um content provider a fim de ler os contatos armazenados no dispositivo de forma simples.
+
+### - Os Broadcast Receivers são componentes que ficam "escutando" a ocorrência de determinados eventos, que podem ser nativos ou disparados por aplicações. Uma aplicação pode, por exemplo, utilizar um broadcast receiver para ser avisada quando o dispositivo estiver recebendo uma ligação e, com base nessa informação, realizar algum tipo de processamento.
+
+### - Junto os estes componentes, existe o arquivo de manifesto AndroidManifest.xml. Ele é obrigatório e único para cada aplicação. É nele que são feitas as configurações gerais da aplicação e dos componentes que fazem parte dela. E, juntando tudo isto, existe a figura do Android Core, que na verdade não é um componente específico, mas sim a plataforma Android propriamente dita. É ele quem proporciona a interação entre os componentes e as aplicações e torna possível a execução do código.
 
 -----------------------------------------------------------------------------------------
 
