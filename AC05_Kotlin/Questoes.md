@@ -20,6 +20,8 @@ relacionadas ao cadastro.
 
 Exercícios extras, não obrigatórios; mas que podem ser cobrados na
 avaliação.
+
+
 5) Considerando o cenário descrito no Exercício 4, realize o CRUD de
 funcionários, criando uma tabela em banco de dados com cada uma das
 propriedades descritas no Exercício 4. O ID do funcionário deve ser
