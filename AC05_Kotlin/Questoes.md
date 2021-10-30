@@ -4,9 +4,17 @@
 
 ### - Instanciar elementos do layout no momento da execução. O aplicativo pode criar objetos View e ViewGroup (e processar suas propriedades) programaticamente. Ao declarar a IU no XML, é possível separar a apresentação do seu aplicativo do código que controla o comportamento dele. O uso de arquivos XML também facilita conseguir layouts diferentes para diferentes orientações e tamanhos de tela. Isso é discutido em Compatibilidade com diferentes tamanhos de tela.
 
+-------------------------------------------------------------------------------------------------------------------------------------------
 
-2) Apresente as principais diferenças do Linear Layout para o Relative
-Layout e quando é mais apropriado a utilização de cada um deles.
+# 2) Apresente as principais diferenças do Linear Layout para o Relative Layout e quando é mais apropriado a utilização de cada um deles.
+
+## Resposta: LinearLayout é um grupo de visualizações que alinha todos os filhos em uma única direção vertical ou horizontal. Você pode especificar a direção do layout com o atributo android:orientation.Todos os filhos de um LinearLayout são empilhados um após o outro. Portanto, uma lista vertical terá somente um filho por linha, independentemente da largura, e uma lista horizontal terá altura de apenas uma linha (a altura do filho mais alto, mais preenchimento). Um LinearLayout respeita margens entre filhos e a gravidade (alinhamento à direita, no centro ou à esquerda) de cada filho.
+
+## O Relative Layout é o tipo de layout utilizado no Android para se posicionar os elementos em relação a outro. Por exemplo, se temos um Text View e o desenvolvedor posicionar o botão a sua esquerda, no XML pode-se fazer referência a esse para que o elemento de tela seja posicionado em um determinado lugar de acordo com sua posição.Meios baseados na relação de pontos de vista de seus pais e outros pontos de vista.as visualizações são alinhadas com seu pai, o próprio RelativeLayout ou outras exibições. Por exemplo, declaramos que a descrição está alinhada com a parte inferior do RelativeLayout e que o título está posicionado acima da descrição e ancorado na parte superior do pai. Com a descrição GONE, o RelativeLayout não sabe onde posicionar o Edge inferior do título. Para resolver esse problema, você pode usar um parâmetro de layout muito especial chamado alignWithParentIfMissing .
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
  3) Desenvolva um aplicativo que receba 5 notas de um aluno durante o
 semestre letivo. Calcule a média final do aluno. Caso a nota do aluno
 tenha sido maior ou igual a 6, exibir uma mensagem indicando que ele
