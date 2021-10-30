@@ -22,6 +22,18 @@
 
 -----------------------------------------------------------------------------------------
 # 4) Descreva cada uma das camadas que fazem parte de uma aplicação Android.
+
+## Resposta: 
+### - Na camada Linux Kernel está localizado o sistema operacional da plataforma, que é baseado no Linux. Ela é responsável por serviços de mais baixo nível da plataforma, como gerenciamento de memória e processos, segurança, etc.
+
+### - Na camada Libraries estão as bibliotecas nativas escritas em C/C++ que fazem parte da plataforma. Estão nesta camada APIs como o OpenGL ES (para renderização 3D), SQLite (gerenciador de bancos de dados) e suporte a diversos formatos de áudio e vídeo.
+
+### - A camada Android Runtime dá condições para que as aplicações baseadas na plataforma sejam executadas. Um dos componentes desta camada são as core libraries, que disponibilizam uma API Java utilizada para programação (grande parte das funcionalidades encontradas no Java SE estão disponíveis para o Android). Já o outro componente é a Dalvik Virtual Machine, que é uma máquina virtual para suporte à execução de aplicações.
+
+### - Na camada Application Framework ficam as APIs do Android que são normalmente utilizadas pelas aplicações que executam sobre a plataforma. Os gerenciadores de serviços de telefonia, localização e notificação são alguns exemplos do que este framework disponibiliza.
+
+### - Por fim, a camada Applications representa as aplicações que executam sobre a plataforma. Elas podem ser tanto aplicações nativas - como o gerenciador de contatos, navegador, calendário, etc. - como aplicações criadas por terceiros. Aliás, para o Android não existe distinção entre aplicações nativas e aplicações desenvolvidas por outras pessoas, e é esta característica que garante a ela o alto grau de flexibilidade e extensibilidade da plataforma.
+
 -----------------------------------------------------------------------------------------
 # 5) Considerando uma aplicação desenvolvida em Android que possui uma série de diretórios gerados automaticamente, no ato da criação de um aplicativo, detalhe cada um dos diretórios que fazem parte de sua composição.
 -----------------------------------------------------------------------------------------
