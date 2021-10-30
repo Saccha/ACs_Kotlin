@@ -7,6 +7,7 @@
 -----------------------------------------------------------------------------------------
 
 # 3) Explique o que é o ciclo de vida de uma Activity e quais métodos podem ser utilizados.
+
 ## Resposta: A Activity é um componente de aplicação com um ciclo de vida específico. Quando o usuário acessa a aplicação, navega pelas opções, sai ou retorna para a mesma, as atividades que a compõem passam por uma série de estados do ciclo de vida. Sempre que a Activity muda de estado, o Android aciona um método (callback) correspondente.
 ## Métodos:
 ### - onCreate(): Chamado quando a atividade é criada pela primeira vez.
@@ -25,10 +26,15 @@
 # 5) Considerando uma aplicação desenvolvida em Android que possui uma série de diretórios gerados automaticamente, no ato da criação de um aplicativo, detalhe cada um dos diretórios que fazem parte de sua composição.
 -----------------------------------------------------------------------------------------
 # 6) O processo de desenvolvimento em Android sempre necessita de que sejam realizados downloads de pacotes e dependências que serão trabalhadas no contexto da aplicação. Descreva para que serve o Gradle Scripts e qual a sua importância em um aplicativo Android.
+
 ## Resposta: O Gradle é um build system moderno que juntou as melhores características de outros sistemas de build em um só. Ele é roda sobre a JVM, o que permite que você escreva código em Java para executar seus scripts durante o build, o que é perfeito para os programadores Java.Ele funciona baseado em plugins. Isso permite que desenvolvedores de outras linguagens possam criar seus próprios scripts para, durante a compilação, outras tarefas sejam executadas.
 
 -----------------------------------------------------------------------------------------
+
 # 7) Descreva em detalhes o que é um emulador, quais são as suas principais características e qual a sua importância no contexto de uma aplicação Mobile.
+
+## Resposta: O Android Emulator simula dispositivos Android no seu computador. Assim, você pode testar seu aplicativo em diversos dispositivos e níveis da API do Android, sem precisar ter todos os dispositivos físicos. O emulador oferece quase todos os recursos de um dispositivo Android real. É possível simular o recebimento de chamadas telefônicas e mensagens de texto, especificar o local do dispositivo, simular diferentes velocidades de rede, simular rotação e outros sensores de hardware, acessar a Google Play Store e muito mais. O teste do app no emulador é, de certa forma, mais rápido e mais fácil do que fazer isso em um dispositivo físico. Por exemplo, você pode transferir dados mais rapidamente para o emulador do que para um dispositivo conectado via USB.
+
 -----------------------------------------------------------------------------------------
 # 8) Explique o que é um evento e detalhe quando ele deve ser utilizado no processo de desenvolvimento de software para dispositivos móveis.
 -----------------------------------------------------------------------------------------
