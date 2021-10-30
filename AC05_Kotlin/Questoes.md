@@ -15,42 +15,30 @@
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------
- 3) Desenvolva um aplicativo que receba 5 notas de um aluno durante o
-semestre letivo. Calcule a média final do aluno. Caso a nota do aluno
-tenha sido maior ou igual a 6, exibir uma mensagem indicando que ele
-foi aprovado. Entre 3 a 5.9, exibir uma mensagem indicando que ele
-está de exame. Menor do que 3, exibir uma mensagem indicando que o
-aluno foi reprovado.
-4) Crie um formulário utilizando o Relative Layout para o cadastro de um
-funcionário. O formulário deve conter as seguintes propriedades
-• ID do funcionário (TextView e EditText)
-• Nome do funcionário (TextView e EditText)
-• Cargo do funcionário (TextView e EditText)
-• Data de admissão do funcionário (TextView e EditText)
-• Endereço do funcionário (TextView e EditText)
-• Botões para Inserir, Alterar, Excluir e Consultar as informações
-relacionadas ao cadastro.
+# 3) Desenvolva um aplicativo que receba 5 notas de um aluno durante o semestre letivo. Calcule a média final do aluno. Caso a nota do aluno tenha sido maior ou igual a 6, exibir uma mensagem indicando que ele foi aprovado. Entre 3 a 5.9, exibir uma mensagem indicando que ele está de exame. Menor do que 3, exibir uma mensagem indicando que o aluno foi reprovado.
 
-Exercícios extras, não obrigatórios; mas que podem ser cobrados na
-avaliação.
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+# 4) Crie um formulário utilizando o Relative Layout para o cadastro de um funcionário. O formulário deve conter as seguintes propriedades
+## • ID do funcionário (TextView e EditText)
+## • Nome do funcionário (TextView e EditText)
+## • Cargo do funcionário (TextView e EditText)
+## • Data de admissão do funcionário (TextView e EditText)
+## • Endereço do funcionário (TextView e EditText)
+## • Botões para Inserir, Alterar, Excluir e Consultar as informações relacionadas ao cadastro.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+## -----> Exercícios extras, não obrigatórios; mas que podem ser cobrados na avaliação. <-----
 
 
-5) Considerando o cenário descrito no Exercício 4, realize o CRUD de
-funcionários, criando uma tabela em banco de dados com cada uma das
-propriedades descritas no Exercício 4. O ID do funcionário deve ser
-gerado automaticamente e ter incremento de um elemento para cada
-novo cadastro, em que:
-• Para a inclusão do funcionário o ID não deve ser preenchido na
-interface gráfica.
-• Para a alteração do cadastro de um funcionário, o filtro de busca
-sempre será o ID do mesmo. Ou seja, o usuário informará na
-interface gráfica o ID desejado para alteração.
-• Para a exclusão do cadastro de um funcionário, o filtro de busca
-sempre será o ID do mesmo. Todos os campos, exceto o ID do
-funcionário deverão ser alterados no banco de dados.
-• Para a consulta do funcionário, a pesquisa deve apresentar todos
-os dados de todos os funcionários que estão cadastrados em
-base, seguindo a mesma linha do exemplo apresentado em aula.
+# 5) Considerando o cenário descrito no Exercício 4, realize o CRUD de funcionários, criando uma tabela em banco de dados com cada uma das propriedades descritas no Exercício 4. O ID do funcionário deve ser gerado automaticamente e ter incremento de um elemento para cada novo cadastro, em que:
+## • Para a inclusão do funcionário o ID não deve ser preenchido na interface gráfica.
+## • Para a alteração do cadastro de um funcionário, o filtro de busca sempre será o ID do mesmo. Ou seja, o usuário informará na interface gráfica o ID desejado para alteração.
+## • Para a exclusão do cadastro de um funcionário, o filtro de busca sempre será o ID do mesmo. Todos os campos, exceto o ID do funcionário deverão ser alterados no banco de dados.
+## • Para a consulta do funcionário, a pesquisa deve apresentar todos os dados de todos os funcionários que estão cadastrados em base, seguindo a mesma linha do exemplo apresentado em aula.
 
-6) Explique o princípio de funcionamento do SQLite e qual a sua
-importância no processo de desenvolvimento Mobile.
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+# 6) Explique o princípio de funcionamento do SQLite e qual a sua importância no processo de desenvolvimento Mobile.
+
+## Resposta: Salvar dados em um banco de dados é ideal para dados estruturados ou que se repetem, por exemplo, os dados de contato. Esta página supõe que você esteja familiarizado com os bancos de dados SQL em geral e ajuda a começar a trabalhar com bancos de dados SQLite no Android. As APIs necessárias para usar um banco de dados no Android estão disponíveis no pacote android.database.sqlite.Um dos princípios mais importantes dos bancos de dados SQL é o esquema: uma declaração formal de como o banco de dados é organizado. O esquema é refletido nas declarações SQL usadas na criação do banco de dados. É aconselhável criar uma classe de acompanhamento, conhecida como classe de contrato, que especifica explicitamente o layout do esquema de forma sistemática e autodocumentada.Uma classe de contrato é o contêiner das constantes que definem nomes para URIs, tabelas e colunas. A classe de contrato permite usar as mesmas constantes em outras classes no mesmo pacote. Isso permite que você altere o nome de uma coluna em um local e que a mudança se propague por todo o código.Uma boa forma de organizar uma classe de contrato é colocar definições que sejam globais para todo o banco de dados no nível raiz da classe. Em seguida, crie uma classe interna para cada tabela. Cada classe interna enumera as colunas da tabela correspondente.
