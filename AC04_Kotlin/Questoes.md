@@ -29,9 +29,8 @@
 ### - onRestart(): Chamado depois que atividade tiver sido interrompida, logo antes de ser reiniciada. 
 ### - onDestroy(): Chamado antes de a atividade ser destruída. É a última chamada que a atividade receberá. 
 
-
-
 -----------------------------------------------------------------------------------------
+
 # 4) Descreva cada uma das camadas que fazem parte de uma aplicação Android.
 
 ## Resposta: 
@@ -48,6 +47,7 @@
 -----------------------------------------------------------------------------------------
 # 5) Considerando uma aplicação desenvolvida em Android que possui uma série de diretórios gerados automaticamente, no ato da criação de um aplicativo, detalhe cada um dos diretórios que fazem parte de sua composição.
 -----------------------------------------------------------------------------------------
+
 # 6) O processo de desenvolvimento em Android sempre necessita de que sejam realizados downloads de pacotes e dependências que serão trabalhadas no contexto da aplicação. Descreva para que serve o Gradle Scripts e qual a sua importância em um aplicativo Android.
 
 ## Resposta: O Gradle é um build system moderno que juntou as melhores características de outros sistemas de build em um só. Ele é roda sobre a JVM, o que permite que você escreva código em Java para executar seus scripts durante o build, o que é perfeito para os programadores Java.Ele funciona baseado em plugins. Isso permite que desenvolvedores de outras linguagens possam criar seus próprios scripts para, durante a compilação, outras tarefas sejam executadas.
@@ -59,7 +59,25 @@
 ## Resposta: O Android Emulator simula dispositivos Android no seu computador. Assim, você pode testar seu aplicativo em diversos dispositivos e níveis da API do Android, sem precisar ter todos os dispositivos físicos. O emulador oferece quase todos os recursos de um dispositivo Android real. É possível simular o recebimento de chamadas telefônicas e mensagens de texto, especificar o local do dispositivo, simular diferentes velocidades de rede, simular rotação e outros sensores de hardware, acessar a Google Play Store e muito mais. O teste do app no emulador é, de certa forma, mais rápido e mais fácil do que fazer isso em um dispositivo físico. Por exemplo, você pode transferir dados mais rapidamente para o emulador do que para um dispositivo conectado via USB.
 
 -----------------------------------------------------------------------------------------
+
 # 8) Explique o que é um evento e detalhe quando ele deve ser utilizado no processo de desenvolvimento de software para dispositivos móveis.
+
+## Resposta: Um listener de eventos é uma interface na classe View que contém um único método de callback. Esses métodos serão chamados pelo framework do Android quando a View a que o listener estiver registrado for ativada pela interação do usuário com o item na IU.Os seguintes métodos de callback estão incluídos nas interfaces do listener de eventos:
+
+### - onClick(): De View.OnClickListener. É chamado quando o usuário toca no item (no modo de toque) ou foca no item com as teclas de navegação ou o trackball e pressiona a tecla "Enter" adequada ou pressiona o trackball.
+
+### - onLongClick(): De View.OnLongClickListener. É chamado quando o usuário mantém o item pressionado (no modo de toque) ou foca no item com as teclas de navegação ou o trackball e mantém pressionada a tecla "Enter" adequada ou mantém o trackball pressionado (por um segundo).
+
+### - onFocusChange(): De View.OnFocusChangeListener. É chamado quando o usuário navega para ou do item usando as teclas de navegação ou o trackball.
+
+### - onKey(): De View.OnKeyListener. É chamado quando o usuário está com foco no item e pressiona ou solta uma tecla de hardware no dispositivo.
+
+### - onTouch(): De View.OnTouchListener. É chamado quando o usuário realiza uma ação qualificada como um evento de toque, incluindo o pressionamento, a liberação ou qualquer outro gesto de movimento na tela (dentro dos limites do item).
+
+### - onCreateContextMenu(): De View.OnCreateContextMenuListener. É chamado quando um menu de contexto está sendo criado (como resultado de um "clique longo"). Consulte a discussão sobre menus de contexto no guia do desenvolvedor de Menus.
+
+## Esses métodos são os únicos das respectivas interfaces. Para definir um desses métodos e lidar com seus eventos, implemente a interface aninhada na atividade ou defina-a como uma classe anônima. Em seguida, transmita uma instância da sua implementação para o respectivo método View.set...Listener(). Por exemplo: chame setOnClickListener() e transmita-o à implementação de OnClickListener.
+
 -----------------------------------------------------------------------------------------
 # 9) Explique o princípio de funcionamento do depurador do Android Studio e quando ele deve ser utilizado durante o desenvolvimento da aplicação.
 
