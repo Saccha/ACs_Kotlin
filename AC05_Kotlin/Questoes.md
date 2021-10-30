@@ -1,8 +1,13 @@
-1) Explique o que são Layouts e quais são os tipos existentes para serem
-trabalhados no contexto de uma aplicação Mobile.
+# 1) Explique o que são Layouts e quais são os tipos existentes para serem trabalhados no contexto de uma aplicação Mobile.
+## Resposta: O layout define a estrutura de uma interface do usuário no aplicativo, como acontece na atividade. Todos os elementos do layout são criados usando a hierarquia de objetos View e ViewGroup. A View geralmente desenha algo que o usuário pode ver e com que pode interagir. Já um ViewGroup é um contêiner invisível que define a estrutura do layout para View e outros objetos ViewGroup Os objetos View geralmente são chamados de "widgets" e podem ser uma das muitas subclasses, como Button ou TextView. Os objetos ViewGroup geralmente são chamados de layouts e podem ser de um dos muitos tipos que fornecem uma estrutura de layout diferente, como LinearLayout ou ConstraintLayout . Um layout pode ser declarado de duas maneiras:
+### - Declarar elementos da IU em XML. O Android fornece um vocabulário XML direto que corresponde às classes e subclasses de visualização, como as de widgets e layouts. Também é possível usar o Layout Editor do Android Studio para criar o layout XML usando uma interface de arrastar e soltar.
+
+### - Instanciar elementos do layout no momento da execução. O aplicativo pode criar objetos View e ViewGroup (e processar suas propriedades) programaticamente. Ao declarar a IU no XML, é possível separar a apresentação do seu aplicativo do código que controla o comportamento dele. O uso de arquivos XML também facilita conseguir layouts diferentes para diferentes orientações e tamanhos de tela. Isso é discutido em Compatibilidade com diferentes tamanhos de tela.
+
+
 2) Apresente as principais diferenças do Linear Layout para o Relative
 Layout e quando é mais apropriado a utilização de cada um deles.
-3) Desenvolva um aplicativo que receba 5 notas de um aluno durante o
+ 3) Desenvolva um aplicativo que receba 5 notas de um aluno durante o
 semestre letivo. Calcule a média final do aluno. Caso a nota do aluno
 tenha sido maior ou igual a 6, exibir uma mensagem indicando que ele
 foi aprovado. Entre 3 a 5.9, exibir uma mensagem indicando que ele
