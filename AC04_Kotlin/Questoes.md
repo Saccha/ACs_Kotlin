@@ -1,5 +1,20 @@
 # 1) Explique os principais recursos que fazem parte da composição do Android Studio.
 
+## Resposta: 
+
+### 1.Barra de ferramentas: Permite realizar diversas ações, inclusive executar apps e inicializar ferramentas do Android.
+
+### 2.Barra de navegação: Ajuda a navegar pelo projeto e a abrir arquivos para edição. Ela oferece uma visualização mais compacta da estrutura visível na janela Project.
+
+### 3.Janela do Editor: É onde você cria e modifica o código. Dependendo do tipo de arquivo atual, o editor pode mudar. Por exemplo, ao visualizar um arquivo de layout, o editor abre o Layout Editor.
+
+### 4.Barra de janela de ferramentas: Fica fora da janela do ambiente de desenvolvimento integrado e contém os botões que permitem expandir ou recolher as janelas de cada ferramenta.
+
+### 5.Janela de ferramentas: permitem acessar tarefas específicas, como gerenciamento de projetos, pesquisa e controle de versões, entre outras. As janelas podem ser expandidas e recolhidas.
+
+### 6.Barra de status: Exibe o status do projeto e do próprio ambiente de desenvolvimento integrado, bem como todos os avisos ou mensagens.
+
+
 -----------------------------------------------------------------------------------------
 
 # 2) Detalhe cada um dos componentes que estão inclusos no contexto de uma aplicação em Android.
