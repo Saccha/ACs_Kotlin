@@ -45,7 +45,26 @@
 ### - Por fim, a camada Applications representa as aplicações que executam sobre a plataforma. Elas podem ser tanto aplicações nativas - como o gerenciador de contatos, navegador, calendário, etc. - como aplicações criadas por terceiros. Aliás, para o Android não existe distinção entre aplicações nativas e aplicações desenvolvidas por outras pessoas, e é esta característica que garante a ela o alto grau de flexibilidade e extensibilidade da plataforma.
 
 -----------------------------------------------------------------------------------------
+
 # 5) Considerando uma aplicação desenvolvida em Android que possui uma série de diretórios gerados automaticamente, no ato da criação de um aplicativo, detalhe cada um dos diretórios que fazem parte de sua composição.
+
+## Resposta:
+
+### - App: Define tudo que está dentro da aplicação
+### - AndroidManifest.xml: é o arquivo principal de um projeto Android, é ele que define todas as configurações que serão trabalhadas na aplicação
+### - Java: Contém a lógica da aplicação - MainActivity: Primeira activity criada por padrão e Activity_main.xml: Lida com a parte visual daaplicação. Quando a activity é criada, ele fala que o conteúdo está presente
+### - RES: Contém os recursos da aplicação
+### - Drawable: Armazena recursos gráficos, uma imagem, sons, vídeos, todos os ícones ficam dentro da pasta
+### - Layouts: Contém as interfaces gráficas, as telas da aplicação
+### - Mipmap: Contém os ícones da aplicação
+### - Values: Contém os valores trabalhados para os atributos da aplicação. De maneira reutilizável
+###     - Colors.xml: armazena as cores trabalhadas pela aplicação
+###     - Strings.xml: armazena textos
+###     - Styles.xml: armazena estilos da aplicação
+### - Gladle Scripts: Contém as dependências da aplicação.É um gerenciador de dependências
+###     - Build.gradle: Contém informações como dependências reutilizáveis, SDK mínimo e máximo e muitas outras informações
+
+
 -----------------------------------------------------------------------------------------
 
 # 6) O processo de desenvolvimento em Android sempre necessita de que sejam realizados downloads de pacotes e dependências que serão trabalhadas no contexto da aplicação. Descreva para que serve o Gradle Scripts e qual a sua importância em um aplicativo Android.
